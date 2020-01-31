@@ -93,7 +93,7 @@ describe App do
 
     it 'subtracts the second number from the first' do
       get '/subtract/291/174'
-add subtract multiply
+
       expect(last_response.status).to eq(200)
       expect(last_response.body).to include('117')
     end
