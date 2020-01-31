@@ -30,4 +30,5 @@ class App < Sinatra::Base
     when "divide"
       "#{params[:number1] / params[:number2]}"
     end
+  end
 end
