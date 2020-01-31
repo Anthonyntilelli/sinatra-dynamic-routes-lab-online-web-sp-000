@@ -28,6 +28,6 @@ class App < Sinatra::Base
     when "multiply"
       "#{params[:number1] * params[:number2]}"
     when "divide"
-      "#{params[:number1] /params[:number2]}"
+      "#{params[:number1] / params[:number2]}"
     end
 end
