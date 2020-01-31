@@ -20,10 +20,10 @@ class App < Sinatra::Base
   end
   
   get '/:operation/:number1/:number2' do
-    params[:name]
+    
     add subtract multiply divide
     case capacity
-    when 0
+    when params[:operation]
       "You ran out of gas."
     when 1..20
       "The tank is almost empty. Quickly, find a gas station!"
