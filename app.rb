@@ -31,7 +31,5 @@ class App < Sinatra::Base
       "You should be ok for now."
     when "divide"
       "The tank is almost full."
-    else
-      "Error: capacity has an invalid value (#{capacity})"
     end
 end
