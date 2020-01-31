@@ -22,14 +22,14 @@ class App < Sinatra::Base
   get '/:operation/:number1/:number2' do
     
     add subtract multiply divide
-    case capacity
-    when params[:operation]
+    case params[:operation]
+    when "add"
       "You ran out of gas."
-    when 1..20
+    when "subtract"
       "The tank is almost empty. Quickly, find a gas station!"
-    when 21..70
+    when "multiply"
       "You should be ok for now."
-    when 71..100
+    when "divide"
       "The tank is almost full."
     else
       "Error: capacity has an invalid value (#{capacity})"
