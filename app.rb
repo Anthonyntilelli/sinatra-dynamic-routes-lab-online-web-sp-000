@@ -21,5 +21,5 @@ class App < Sinatra::Base
   
   get '/:operation/:number1/:number2' do
     params[:name]
-  end
+    add subtract multiply divide
 end
