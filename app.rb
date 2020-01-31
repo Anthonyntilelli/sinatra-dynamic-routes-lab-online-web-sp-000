@@ -26,7 +26,7 @@ class App < Sinatra::Base
     when "subtract"
       "#{params[:number1] - params[:number2]}"
     when "multiply"
-      "You should be ok for now."
+      "#{params[:number1] * params[:number2]}"
     when "divide"
       "The tank is almost full."
     end
