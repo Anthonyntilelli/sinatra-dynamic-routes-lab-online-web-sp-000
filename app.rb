@@ -26,11 +26,11 @@ class App < Sinatra::Base
     when "add"
       "#{ num1 + num2 }"
     when "subtract"
-      "#{params[:number1] - params[:number2]}"
+      "#{num1 - num2}"
     when "multiply"
-      "#{params[:number1] * params[:number2]}"
+      "#{num1 * num2}"
     when "divide"
-      "#{params[:number1] / params[:number2]}"
+      "#{num1 / num2}"
     end
   end
 end
